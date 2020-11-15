@@ -215,3 +215,14 @@ p {
         
     }
 }
+
+@media (min-width: 768px) and (max-width: 898px){
+    #title{
+        text-align: center;
+    }
+    
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
