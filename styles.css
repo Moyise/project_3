@@ -1,23 +1,47 @@
 body {
     font-family: 'Montserrat';
+    text-align: center;
 }
 
-/* Section Title */
-
-#title {
-    background-color: #ffbdd3;
-    color: white;
+h1, h2, h3, h4, h5, h5 {
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.container-fluid {
-    padding: 3% 15% 0;
+p {
+    color: #8f8f8f;
 }
 
-h1 {
+/* Headings */
+
+.big-heading {
     font-family: 'Ubuntu', sans-serif;
     font-size: 3.5rem;
     line-height: 1.5;
 }
+
+
+/* Section Title */
+
+#title {
+    color: white;
+    text-align: left;
+}
+
+.container-fluid {
+    padding: 3% 15% 0;
+    
+}
+
+/* Sections */
+
+.colored {
+    background-color: #ffbdd3;
+}
+
+.white {
+    background-color: white;
+}
+
 
 /* Navigation Bar */
 
@@ -59,14 +83,16 @@ h1 {
 /* Section Features */
 
 #features {
-    background-color: white;
     padding: 7% 5%;
     position: relative;
     z-index: 1;
 }
 
+.feature-title {
+    font-size: 1.5rem;
+}
+
 .feature-box {
-    text-align: center;
     padding: 5%;
 }
 
@@ -79,36 +105,26 @@ h1 {
     color: #fc5185;
 }
 
-h3 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.5rem;
-}
-p {
-    color: #8f8f8f;
-    
-}
+
 
 /* Section Testimonials */
 
 #testimonials {
-    background-color: #ffbdd3;
     /* padding: 5% 5%; */
-    text-align: center;
     color: white;
 }
 
 .testimonials-line {
     font-family: 'Ubuntu', sans-serif;
-    color: white;
-    text-align: center;
     text-decoration: underline;
     padding: 0 0 10%;
-    background-color: #ffbdd3;
+    
 }
 
 .testimonial-text {
     font-family: 'Montserrat';
     padding: 0 15%;
+    
 }
 
 .testimonial-img {
@@ -129,9 +145,13 @@ p {
 /* Section Press */
 
 #press {
-    background-color: #ffbdd3;
-    text-align: center;
     padding-bottom: 3%;
+}
+
+.price-text {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 2rem;
+    
 }
 
 /* .press-logo {
@@ -143,9 +163,7 @@ p {
 /* Section Pricing */
 
 #pricing {
-    background-color: white;
     padding: 60px;
-    text-align: center;
 }
 
 .pricing-col {
@@ -156,13 +174,14 @@ p {
 .pricing-title {
     font-family: 'Ubuntu', sans-serif;
 }
+.plan-name {
+    font-size: 1.5rem;
+}
 
 
 /* Call to Action */
 
 #cta{
-    background-color: #ffbdd3;
-    text-align: center;
     padding: 7% 0;
 }
 
@@ -176,8 +195,6 @@ p {
 /* Section Footer */
 
 #footer{
-    background-color: white;
-    text-align: center;
     padding: 5%;
 }
 
@@ -198,8 +215,8 @@ p {
 
 /* Tablet and Mobile */
 
-@media (max-width: 767px){
-    #title{
+@media (max-width: 1028px){
+    body {
         text-align: center;
     }
     
@@ -209,20 +226,3 @@ p {
     }
 }
 
-@media (max-width: 992px){
-    .pricing-col {
-        padding: 0;
-        
-    }
-}
-
-@media (min-width: 768px) and (max-width: 898px){
-    #title{
-        text-align: center;
-    }
-    
-    .title-image {
-        position: static;
-        transform: rotate(0);
-    }
-}
